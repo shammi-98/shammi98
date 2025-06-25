@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Haven | Fine Dining Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/animations.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="theme-switch-wrapper">
+        <span id="toggle-icon">
+            <i class="fas fa-sun"></i>
+        </span>
+        <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <div class="slider round"></div>
+        </label>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../main/index.html" class="logo">Gourmet<span>Haven</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../main/index.html" class="nav-links">Home</a></li>
+                <li class="nav-item"><a href="../main/menu.html" class="nav-links">Menu</a></li>
+                <li class="nav-item"><a href="../main/about.html" class="nav-links">About</a></li>
+                <li class="nav-item"><a href="../main/contact.html" class="nav-links">Contact</a></li>
+                <li class="nav-item"><a href="../main/cart.html" class="nav-links cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Exquisite Flavors <span class="highlight">Crafted</span> with Passion</h1>
+            <p class="hero-subtitle">Discover our seasonal menu featuring premium ingredients from local artisans</p>
+            <div class="hero-buttons">
+                <a href="../main/menu.html" class="btn-primary">View Menu</a>
+                <a href="../main/contact.html" class="btn-secondary">Reservations</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=1984&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Signature Dish" class="floating">
+        </div>
+    </section>
+
+    <!-- Featured Dishes -->
+    <section class="featured">
+        <h2 class="section-title">Chef's <span class="highlight">Recommendations</span></h2>
+        <div class="featured-grid">
+            <!-- Dish cards will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="testimonial-slider">
+            <!-- Testimonial slides will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>GourmetHaven</h3>
+                <p>Where every meal is a celebration of flavor and craftsmanship.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../main/index.html">Home</a></li>
+                    <li><a href="../main/menu.html">Menu</a></li>
+                    <li><a href="../main/about.html">About Us</a></li>
+                    <li><a href="../main/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Gourmet Street, Foodville</li>
+                    <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                    <li><i class="fas fa-envelope"></i> info@gourmethaven.com</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Subscribe for updates and special offers</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 GourmetHaven. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script/main.js"></script>
+    <script src="../script/gsap-animations.js"></script>
+</body>
+</html>
